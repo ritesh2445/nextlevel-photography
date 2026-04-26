@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Films | NEXT LEVEL Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="blog-body">
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-inner">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="images/nl-logo.png" alt="NL" class="logo-mark" />
+          <div class="logo-text-wrap">
+            <span class="logo-next">NEXT LEVEL</span>
+            <span class="logo-sub">Photography</span>
+          </div>
+        </a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#photography" class="nav-item">Photography</a></li>
+        <li><a href="index.html#films" class="nav-item">Films</a></li>
+        <li><a href="index.html#contact" class="nav-item">Contact Us</a></li>
+        <li><a href="index.html#about" class="nav-item">About</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="index.html#contact" class="btn-get-in-touch">Get In Touch</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="blog-main-wrapper" style="margin-top: calc(var(--nav-h) + 2rem);">
+    <div class="blog-container js-fade-up">
+      <div class="blog-filter">
+        <span class="filter-label">Select:</span>
+        <div class="filter-options">
+          <span class="filter-option active">All Films</span> | 
+          <span class="filter-option">Wedding</span> | 
+          <span class="filter-option">Pre-Wedding</span>
+        </div>
+      </div>
+
+      <div class="films-grid">
+        <!-- Film 1 -->
+        <a href="post-singapore.html" class="film-card" style="display:block;">
+          <div class="film-thumb">
+            <img src="images/mosaic_couple.png" alt="Wedding Film" loading="lazy" />
+            <div class="film-label-overlay">
+              <p class="film-brand">NEXT LEVEL PHOTOGRAPHY</p>
+              <h3 class="film-couple-name">AN EVENING OF LOVE</h3>
+              <p class="film-location">Singapore</p>
+            </div>
+            <div class="film-play-btn">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="white"><polygon points="6,3 22,12 6,21"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Film 2 -->
+        <a href="post-reva.html" class="film-card" style="display:block;">
+          <div class="film-thumb">
+            <img src="images/prewedding.png" alt="Wedding Film" loading="lazy" />
+            <div class="film-label-overlay">
+              <p class="film-brand">NEXT LEVEL PHOTOGRAPHY</p>
+              <h3 class="film-couple-name">REVA&amp;ZACH</h3>
+              <p class="film-location">Udaipur, Rajasthan</p>
+            </div>
+            <div class="film-play-btn">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="white"><polygon points="6,3 22,12 6,21"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Film 3 -->
+        <a href="blog-post.html" class="film-card" style="display:block;">
+          <div class="film-thumb">
+            <img src="images/fashion.png" alt="Pre-Wedding Film" loading="lazy" />
+            <div class="film-label-overlay">
+              <p class="film-brand">NEXT LEVEL PHOTOGRAPHY</p>
+              <h3 class="film-couple-name">KIARA&amp;SIDDHARTH</h3>
+              <p class="film-location">Suryagarh, Jaisalmer</p>
+            </div>
+            <div class="film-play-btn">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="white"><polygon points="6,3 22,12 6,21"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Film 4 -->
+        <a href="post-alia.html" class="film-card" style="display:block;">
+          <div class="film-thumb">
+            <img src="images/films.png" alt="Wedding Film" loading="lazy" />
+            <div class="film-label-overlay">
+              <p class="film-brand">NEXT LEVEL PHOTOGRAPHY</p>
+              <h3 class="film-couple-name">ALIA&amp;RANBIR</h3>
+              <p class="film-location">Mumbai, Maharashtra</p>
+            </div>
+            <div class="film-play-btn">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="white"><polygon points="6,3 22,12 6,21"/></svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

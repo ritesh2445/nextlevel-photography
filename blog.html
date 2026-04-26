@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photography Blog | NEXT LEVEL Photography</title>
+  <meta name="description" content="Read our latest wedding stories, international shoots, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="blog-body">
+  <!-- NAVIGATION -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-inner">
+      <!-- Logo -->
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="images/nl-logo.png" alt="NL" class="logo-mark" />
+          <div class="logo-text-wrap">
+            <span class="logo-next">NEXT LEVEL</span>
+            <span class="logo-sub">Photography</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center nav links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#photography" class="nav-item">Photography</a></li>
+        <li><a href="index.html#films" class="nav-item">Films</a></li>
+        <li><a href="index.html#contact" class="nav-item">Contact Us</a></li>
+        <li><a href="index.html#about" class="nav-item">About</a></li>
+      </ul>
+
+      <!-- Right -->
+      <div class="nav-right">
+        <a href="https://www.instagram.com/nextlevel_photography_amravati/" target="_blank" rel="noopener" class="nav-social" aria-label="Instagram">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/nextlevelphotographyamravati" target="_blank" rel="noopener" class="nav-social" aria-label="Facebook">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.931-1.956 1.886v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+        </a>
+        <a href="index.html#contact" class="btn-get-in-touch" id="navCta">Get In Touch</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BLOG CONTAINER -->
+  <main class="blog-main-wrapper" style="margin-top: calc(var(--nav-h) + 2rem);">
+    <div class="blog-container js-fade-up">
+      <!-- Filter -->
+      <div class="blog-filter">
+        <span class="filter-label">Select:</span>
+        <div class="filter-options">
+          <span class="filter-option active">All</span> | 
+          <span class="filter-option">International</span> | 
+          <span class="filter-option">Indian</span>
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div class="blog-grid">
+        <!-- Card 1 -->
+        <article class="blog-card">
+          <img src="images/mosaic_portrait.png" alt="Reva & Zach" class="blog-img" />
+          <h3 class="blog-title">Reva & Zach</h3>
+          <p class="blog-excerpt">
+            Let's call this our "Happy New Year Wedding". We welcomed 2024 partying with Reva and Zach and we couldn't have asked for a better beginning for the new year.<br/><br/>
+            This was quite an experience for us and the 450 American friends of Reva and Zach who flew all the way to Udaipur for this cross cultural union.
+          </p>
+          <a href="post-reva.html" class="blog-read-more">Read More &rarr;</a>
+          <span class="blog-category">Indian</span>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="blog-card">
+          <img src="images/mosaic_couple.png" alt="An evening of love" class="blog-img" />
+          <h3 class="blog-title">An evening of love , style and blend of two cultures in the heart of Singapore.</h3>
+          <a href="post-singapore.html" class="blog-read-more">Read More &rarr;</a>
+          <span class="blog-category">International</span>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="blog-card">
+          <img src="images/wedding_ceremony.png" alt="Alia & Ranbir" class="blog-img" />
+          <h3 class="blog-title">Alia & Ranbir, Mumbai</h3>
+          <p class="blog-excerpt">
+            Two of the greatest actors of this generation decided to get married in the simplest possible way - in their balcony surrounded by only 30 of their closest friends and family members. We spent three days in their Apartment and witnessed love in its purest form.
+          </p>
+          <a href="post-alia.html" class="blog-read-more">Read More &rarr;</a>
+          <span class="blog-category">Indian</span>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="blog-card">
+          <img src="images/fashion.png" alt="Kiara & Siddharth" class="blog-img" />
+          <h3 class="blog-title">Kiara & Siddharth</h3>
+          <a href="blog-post.html" class="blog-read-more">Read More &rarr;</a>
+          <span class="blog-category">Indian</span>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
