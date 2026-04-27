@@ -30,7 +30,7 @@
 
 /* ── Reset ─────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 
 body {
   background: var(--bg);
@@ -1116,7 +1116,7 @@ button { cursor: pointer; border: none; background: none; }
     text-align: center;
     padding: 0 2rem;
   }
-  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+  .portfolio-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .portfolio-card:last-child { display: block; }
   .about-inner { grid-template-columns: 1fr; gap: 3rem; }
   .about-img { display: none; }
@@ -1135,7 +1135,7 @@ button { cursor: pointer; border: none; background: none; }
   .logo-next { font-size: 0.75rem; }
 
   /* Hero */
-  .hero { height: 60vh; }
+  .hero { height: 100vh; height: 100dvh; }
 
   /* Intro */
   .intro-section { padding: 5rem var(--gutter) 3rem; }
@@ -1182,7 +1182,7 @@ button { cursor: pointer; border: none; background: none; }
 
   /* Portfolio → 2 cols */
   .photography-section { padding: 3rem var(--gutter) 4rem; }
-  .portfolio-grid { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
+  .portfolio-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .portfolio-couple { font-size: 0.85rem; }
   .portfolio-date { font-size: 0.6rem; }
   .portfolio-btn { font-size: 1rem; padding: 10px 24px; }
@@ -1236,7 +1236,7 @@ button { cursor: pointer; border: none; background: none; }
    ============================================================ */
 @media (max-width: 480px) {
   /* Hero */
-  .hero { height: 50vh; }
+  .hero { height: 100vh; height: 100dvh; }
   .hero-scroll-cue { display: none; }
 
   /* Intro heading even smaller */
@@ -1244,7 +1244,7 @@ button { cursor: pointer; border: none; background: none; }
   .intro-script { font-size: clamp(1.1rem, 4.5vw, 1.5rem); }
 
   /* Portfolio → still 2 cols but tighter */
-  .portfolio-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  .portfolio-grid { grid-template-columns: 1fr; gap: 1.2rem; }
   .portfolio-thumb { margin-bottom: 0.5rem; }
   .portfolio-couple { font-size: 0.75rem; }
   .portfolio-date { font-size: 0.55rem; }
