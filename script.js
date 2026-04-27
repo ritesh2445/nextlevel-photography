@@ -20,15 +20,7 @@ navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   document.body.style.overflow = '';
 }));
 
-/* ── Hero parallax ──────────────────────────────────────── */
-const heroImg = document.getElementById('heroImg');
-const heroH   = () => document.getElementById('heroSection')?.offsetHeight || window.innerHeight;
-window.addEventListener('scroll', () => {
-  const y = window.scrollY;
-  if (heroImg && y < heroH()) {
-    heroImg.style.transform = `translateY(${y * 0.28}px)`;
-  }
-}, { passive: true });
+/* ── Hero parallax removed to allow natural scroll ──────────────────────────────────────── */
 
 /* ── IntersectionObserver: fade-up ─────────────────────── */
 const obs = new IntersectionObserver((entries) => {

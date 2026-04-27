@@ -310,10 +310,9 @@ button { cursor: pointer; border: none; background: none; }
 }
 .hero-img {
   width: 100%;
-  height: 110%;          /* extra for parallax travel */
+  height: 100%;
   object-fit: cover;
-  object-position: center center;
-  transform: translateY(0);
+  object-position: center bottom;
   filter: grayscale(15%);
 }
 
