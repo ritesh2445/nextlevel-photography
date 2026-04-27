@@ -3,25 +3,21 @@
  * Matches houseontheclouds.com interactive behaviour exactly
  */
 
-/* ── Sticky nav ─────────────────────────────────────────── */
+/* ── Nav — static, no scroll tracking needed ───────────── */
 const header = document.getElementById('siteHeader');
-window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 40);
-}, { passive: true });
 
 /* ── Mobile hamburger ───────────────────────────────────── */
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => {
-  const open = navLinks.classList.toggle('open');
-  const spans = hamburger.querySelectorAll('span');
-  spans[0].style.transform = open ? 'translateY(6.5px) rotate(45deg)' : '';
-  spans[1].style.opacity   = open ? '0' : '';
-  spans[2].style.transform = open ? 'translateY(-6.5px) rotate(-45deg)' : '';
+  const isOpen = navLinks.classList.toggle('open');
+  hamburger.classList.toggle('active');
+  document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   navLinks.classList.remove('open');
-  hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+  hamburger.classList.remove('active');
+  document.body.style.overflow = '';
 }));
 
 /* ── Hero parallax ──────────────────────────────────────── */
